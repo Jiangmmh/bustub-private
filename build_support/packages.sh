@@ -77,7 +77,7 @@ install_mac() {
   brew ls --versions cmake || brew install cmake
   brew ls --versions coreutils || brew install coreutils
   brew ls --versions doxygen || brew install doxygen
-  brew ls --versions git || brew install git
+  # brew ls --versions git || brew install git
   (brew ls --versions llvm | grep ${CLANG_VERSION}) || brew install llvm@${CLANG_VERSION}
   brew ls --versions libelf || brew install libelf
 }
